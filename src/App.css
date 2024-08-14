@@ -43,7 +43,7 @@ body{
     width: 0%;
     height: 3px;
     position: absolute;
-    background: linear-gradient(to right, #4c8988, #045d56);
+    background: linear-gradient(to right, #96bbba, #4bded2);
     bottom: 0;
     transition: all ease-in-out 0.5s;
     left: 0;    
@@ -51,3 +51,36 @@ body{
   .navlink:hover::after{
     width: 100%;
   }
+
+
+  .navbar-scroll {
+    background-color: black; /* Set your desired background color */
+    padding: 15px; /* Set your desired padding */
+    /* Add additional styles for the scrolled state */
+  }
+
+
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    color: #fff; /* Default text color */
+    transition: transform 0.4s ease, opacity 0.3s ease; /* Smooth hide/show */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+/* When scrolling down, hide the navbar */
+.navbar.hide {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+/* When not scrolling or scrolling up, show the navbar */
+.navbar.show {
+    transform: translateY(0);
+    opacity: 1;
+}
+.navbar:hover{
+  opacity: 1;
+}

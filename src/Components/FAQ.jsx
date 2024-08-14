@@ -7,11 +7,12 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Button from "@mui/material/Button";
 import shadows from "@mui/material/styles/shadows";
+import { Element } from 'react-scroll';
 
 const FAQ = () => {
   return (
-    <div>
-      <Box>
+   <Element name="FAQ">
+    <Box>
         <Container maxWidth="xl">
           <Box sx={{ textAlign: "center", mb: 4, mt: 10 }}>
             <Typography
@@ -135,7 +136,7 @@ const FAQ = () => {
             </Box>
         </Container>
       </Box>
-    </div>
+   </Element>
   );
 };
 

@@ -40,7 +40,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Main = () => {
   return (
-    <div>
+    <div style={{zIndex: 0}}>
       <Box sx={{py: 10, background: 'linear-gradient(to left top, #f6f8f6, #e9f3f2)'}}>
         <Container maxWidth="xl">
         <Grid sx={{display: {md:'flex'}, justifyContent: {md: 'space-evenly', xs: 'center', sm: 'center'}}}>

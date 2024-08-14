@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from 'react-scroll';
 import {
   Card,
   CardContent,
@@ -64,7 +65,8 @@ const Testimonials = () => {
   const [value, setValue] = React.useState(5);
 
   return (
-    <Box>
+    <Element name="Testimonials">
+      <Box>
       <Container sx={{ background: 'linear-gradient(to left top, #f6f8f6, #e9f3f2)', py:  10}} maxWidth="xl">
         <Box sx={{ textAlign: "center", mb: 4 }}>
           <Typography sx={{ fontSize: { xs: "28px", sm: "36px", md: "40px" }, fontWeight: "700" }}>
@@ -96,6 +98,7 @@ const Testimonials = () => {
         </Box>
       </Container>
     </Box>
+    </Element>
   );
 };
 

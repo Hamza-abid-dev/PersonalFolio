@@ -14,9 +14,12 @@ import Slide2 from '../assets/HeroSlideIcons/2.svg'
 import Slide3 from '../assets/HeroSlideIcons/3.svg'
 import Slide4 from '../assets/HeroSlideIcons/4.svg'
 import Slide5 from '../assets/HeroSlideIcons/5.svg'
+import {  Element, Link } from 'react-scroll';
+
 const Hero = () => {
   return (
-    <Box className="background-container" sx={{backgroundColor: '#023b38', color: 'white', py: {md: 20, xs:15}}}>
+   <Element name='Home'>
+     <Box className="background-container" sx={{backgroundColor: '#023b38', color: 'white', py: {md: 20, xs:15}}}>
       <Container maxWidth="xl">
       <Grid sx={{display: {sm: 'flex'}}}>
         <Box component='div' sx={{p: {xs: 0, sm: '70px 0', md: 7}, width: {md: "70%", sm: '70%'}}}>
@@ -27,10 +30,12 @@ const Hero = () => {
         Whenever I write, I aim to create words that sell. There is no better way to market your brand!
         </Typography>
         <Box component="div" sx={{display: 'flex', gap: {xs:'20px', sm: '40px'}, mt: 5}}>
+        <Link to='Newsletter' smooth={true} duration={1000}>
         <Box component="button" sx={{py: 1.8, px: 4, borderRadius: '10px', fontWeight: '600', bgcolor: '#7CD5C4', cursor: 'pointer', transition: 'ease-in-out 0.3s', border: '1px solid black',  '&:hover':{bgcolor: 'transparent', color: 'white', border: '1px solid white' }}}>
         Need a Word
         </Box>
-        <Box component='div' sx={{display: 'flex', img: {width: {xs: '40px', sm: '50px'}}}}>
+        </Link>
+        <Box component='div' sx={{display: 'flex', img: {width: {xs: '40px', sm: '50px'}, transition: 'all ease-in-out 0.2s', ":hover":{scale:'1.4'}}}}>
             <img style={{marginLeft: '-10px'}} src={Hero1} alt="" />
             <img style={{marginLeft: '-10px'}} src={Hero2} alt="" />
             <img style={{marginLeft: '-10px'}} src={Hero3} alt="" />
@@ -48,7 +53,8 @@ const Hero = () => {
         </Box>
         <Box component='div' sx={{
             mr: {lg:10},
-            position:'relative', 
+            position:'relative',
+            zIndex: 1, 
             img: {width: {lg: '100%', xs: '80%'}, margin: {lg: '0', xs: '20px 30px 0 30px'}, 
             },
             }}>
@@ -78,6 +84,7 @@ const Hero = () => {
       </Container>
       </Container>
     </Box>
+   </Element>
   )
 }
 

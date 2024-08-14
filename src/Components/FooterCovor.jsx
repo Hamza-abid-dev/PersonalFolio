@@ -1,10 +1,12 @@
 import { Box, Container, Typography } from '@mui/material'
+import {  Element } from 'react-scroll';
+
 import React from 'react'
 
 const FooterCovor = () => {
   return (
-    <div>
-      <Box sx={{position: 'relative', top: 140}}>
+     <Element name='Newsletter'>
+         <Box sx={{position: 'relative', top: 140}}>
         <Container maxWidth="lg">
             <Box className="background-container" sx={{backgroundColor: '#023b38', color: 'white', pt: 5, pb: 13, borderRadius: '20px'}}>
                 <Box sx={{pl: {lg: 10, xs: 2}, pr: {lg:0, xs: 2}}}>
@@ -25,7 +27,7 @@ const FooterCovor = () => {
                 } 
             </style> 
                 </Box>
-                    <Box component="button" sx={{bgcolor: '#7cd5c5', borderRadius: '10px', border: 'none', px:{lg:2, xs:3}, py:{lg: 1, xs: 1.5}, ":hover":{bgcolor: 'transparent', color: 'white', border: '1px solid white'}, mt: {lg:0, xs: 2}}}>
+                    <Box component="button" sx={{bgcolor: '#7cd5c5', borderRadius: '10px', border: 'none', px:{lg:2, xs:3}, py:{lg: 1, xs: 1.5}, transition: 'all ease-in-out 0.3s', cursor: 'pointer', ":hover":{bgcolor: 'transparent', color: 'white', border: '1px solid white'}, mt: {lg:0, xs: 2}}}>
                     I volunteer my inbox
                     </Box>
                 </Box>
@@ -33,7 +35,7 @@ const FooterCovor = () => {
             </Box>
         </Container>
       </Box>
-    </div>
+     </Element>
   )
 }
 

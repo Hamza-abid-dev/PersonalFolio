@@ -6,6 +6,7 @@ import Logo3 from '../assets/Featured/logo3.png'
 import Paper from '@mui/material/Paper';
 import EastIcon from '@mui/icons-material/East';
 import { styled } from '@mui/material/styles';
+import { Element } from 'react-scroll';
 
 
 
@@ -39,8 +40,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const Featured = () => {
   return (
-    <div>
-      <Box sx={{py: 10}}>
+    <Element name='Resources'>
+       <Box sx={{py: 10}}>
         <Container maxWidth="xl">
         <Grid>
             <Box sx={{textAlign: {lg: 'center'}}}>
@@ -73,7 +74,7 @@ const Featured = () => {
     </Box>
         </Container>
       </Box>
-    </div>
+    </Element>
   )
 }
 
