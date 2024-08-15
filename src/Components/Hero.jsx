@@ -23,7 +23,7 @@ const Hero = () => {
       <Container maxWidth="xl">
       <Grid sx={{display: {sm: 'flex'}}}>
         <Box component='div' sx={{p: {xs: 0, sm: '70px 0', md: 7}, width: {md: "70%", sm: '70%'}}}>
-        <Typography variant='h1' sx={{fontSize: {xs: '37px', md: '60px', sm: '40px', lg: '80px'}, fontWeight: '600'}}>
+        <Typography variant='h1' sx={{fontSize: {xs: '45px', md: '60px', sm: '40px', lg: '80px'}, fontWeight: '600'}}>
         THE ONE YOU CAN TRUST FOR IDEA GENERATION
         </Typography>
         <Typography variant='h6' sx={{maxWidth: '500px', fontSize: '15px', my: 2}}>
