@@ -77,11 +77,11 @@ const Testimonials = () => {
             <br /> experiences with our products and services.
           </Typography>
         </Box>
-        <Box sx={{ position: "relative", width: "100%", maxWidth: "1200px", margin: "0 auto" }}>
+        <Box sx={{ position: "relative", width: "70%", maxWidth: "1200px", margin: "0 auto" }}>
           <Slider {...settings}>
             {sampleData.map((item, index) => (
               <div key={index}>
-                <Card sx={{ maxWidth: { xs: 300, sm: 350, md: 450 }, margin: "20px auto", boxShadow: '0px 0px 10px grey', p: 3, borderRadius: '20px' }}>
+                <Card sx={{ maxWidth: { xs: 200, sm: 350, md: 450 }, margin: "20px auto", boxShadow: '0px 0px 10px grey', p: 3, borderRadius: '20px' }}>
                   <Rating sx={{ display: 'flex', justifyContent: 'center', width: '10px', mx: 'auto', my: 5, fontSize: { xs: '30px', sm: '35px', md: '40px' } }} name="read-only" value={value} readOnly />
                   <CardContent>
                     <Typography gutterBottom variant="h6" component="div" sx={{ display: 'flex', justifyContent: 'center', mt: '-20px', fontSize: { xs: '14px', sm: '16px', md: '18px' } }}>
