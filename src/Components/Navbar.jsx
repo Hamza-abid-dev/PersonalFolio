@@ -96,9 +96,11 @@ const Navbar = () => {
                 sx={{ display: { xs: 'block', md: 'none' } }}
               >
                 {pages.map((page) => (
+                  <Link to={page} smooth={true} duration={2000} key={page}>
                   <MenuItem key={page} onClick={handleCloseNavMenu}>
                     <Typography textAlign="center">{page}</Typography>
                   </MenuItem>
+                  </Link>
                 ))}
               </Menu>
             </Box>
