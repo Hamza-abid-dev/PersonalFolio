@@ -59,7 +59,7 @@ const Hero = () => {
             },
             }}>
             <img src={heroimg} alt="" />
-            <Typography sx={{position: 'absolute', top: '268px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '20px 0 20px 8px', padding: {lg: '16px', xs: '8px'}, color: 'black', left: {lg: '-150px', xs: '-10px'}, boxShadow: '0px 0px 20px black'}}>I'm a copywriter brand strategist . </Typography>
+            <Typography sx={{position: 'absolute', top: '268px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '20px 0 20px 8px', padding: {lg: '16px', xs: '8px'}, color: 'black', left: {lg: '-150px', xs: '-10px'}, boxShadow: '0px 0px 20px black', img:{width: {lg: '100%'}, display: {lg: 'flex', xs: 'none'}}}}> <i><img src={Pen} alt="" /></i> I'm a copywriter brand strategist . </Typography>
             <Typography sx={{position: 'absolute', top: '76px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '0px 20px 8px 20px', padding: {lg: '16px', xs: '8px'}, color: 'black', right: {lg: '-70px', xs: '-10px'}, boxShadow: '0px 0px 20px black'}}>👋 Hey, I'm Noman </Typography>
         </Box>
       </Grid>
