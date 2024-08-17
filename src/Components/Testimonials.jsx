@@ -17,8 +17,8 @@ const sampleData = [
     image: "https://via.placeholder.com/150",
   },
   {
-    title: "abdu_sizz | Egypt",
-    description: "Syed is one of the best, hard-working, passionate, and respectful people you can work with on Fiverr. His work was exceptional, providing amazing work on a platform he was somewhat unfamiliar with which utilised the Chrome CEF. Second, the work was done blazing fast which was unexpected for the amount of work. Third, his prices beat almost everyone",
+    title: `abdu_sizz_abdu_sizz | Egypt`,
+    description: "Syed is one of the best, hard-working, passionate, and respectful people you can work with on Fiverr. His work was exceptional, providing amazing work",
     image: "https://via.placeholder.com/150",
   },
   {
@@ -85,7 +85,7 @@ const Testimonials = () => {
                   <Rating sx={{ display: 'flex', justifyContent: 'center', width: '10px', mx: 'auto', my: 5, fontSize: { xs: '30px', sm: '35px', md: '40px' } }} name="read-only" value={value} readOnly />
                   <CardContent>
                     <Typography gutterBottom variant="h6" component="div" sx={{ display: 'flex', justifyContent: 'center', mt: '-20px', fontSize: { xs: '14px', sm: '16px', md: '18px' } }}>
-                      "{item.description.slice(0, 140)}..."
+                      "{item.description.slice(0, 200)}"
                     </Typography>
                     <Typography variant="h6" color="text.secondary" sx={{ textAlign: 'center', fontSize: { xs: '14px', sm: '16px', md: '18px' } }}>
                       {item.title}
