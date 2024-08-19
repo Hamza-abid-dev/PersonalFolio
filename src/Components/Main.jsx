@@ -90,7 +90,7 @@ const Main = () => {
       <Box ref={ref} sx={{py: 10, background: 'linear-gradient(to left top, #f6f8f6, #e9f3f2)'}}>
         <Container id="main" sx={{opacity: '0', mt: '100px'}} maxWidth="xl">
         <Grid sx={{display: {md:'flex'}, justifyContent: {md: 'space-evenly', xs: 'center', sm: 'center'}}}>
-            <Box sx={{display: 'flex', justifyContent: 'center', img: {width: '10%', } }}>
+            <Box sx={{display: 'flex', justifyContent: 'center', img: {width: '80%' } }}>
                 <img id='img' src={headImg} alt="" />
             </Box>
             <Box sx={{width: {md: '40%', xs: '100%'}, p: {lg: 5}, mt: {lg: 0, xs: 5}}}>

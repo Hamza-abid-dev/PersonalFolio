@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
@@ -16,12 +16,18 @@ import Slider from 'react-slick';
 import FAQ from './Components/FAQ'
 import FooterCovor from './Components/FooterCovor'
 import Footer from './Components/Footer'
+import Loader from './PreLoader/Loader'
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  useEffect(() => {
+    // Simulate a data fetching process
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000); // Simulate a 3-second loading time
+  }, []);
   return (
     <>
-    {/* <img className='heroBg' src={Left} alt="" />
-    <img className='heroBg1' src={Center} alt="" />
-    <img className='heroBg2' src={Right} alt="" /> */}
+    {isLoading ? <Loader /> :  <>
      <Navbar/>
      <Hero/>
      <Main/>
@@ -31,6 +37,7 @@ function App() {
      <FAQ/>
      <FooterCovor/>
      <Footer/>
+     </>}
     </>
   )
 }
