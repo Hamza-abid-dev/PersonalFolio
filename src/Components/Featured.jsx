@@ -14,19 +14,19 @@ import { Element } from 'react-scroll';
 
 const cards = [
     {
-        logo: Logo1,
-        title: 'Get A New Website Done ',
-        description: 'Create a strong personal brand identity that exudes authority in the UK business industry.'
+        logo: 'https://miro.medium.com/v2/resize:fit:1200/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg',
+        title: 'Building Scalable Applications',
+        description: 'Dive deep into strategies for designing and developing scalable applications using the MERN stack, ensuring high performance as your user base grows.'
     },
     {
-        logo: Logo2,
-        title: 'Create Enticing Brand for A Luxury Gift Brand',
-        description: "Too many e-commerce brands sell lavender sachets at a low price. Lamiale is a luxury product."
+        logo: 'https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png',
+        title: 'Optimizing React Performance',
+        description: "Learn best practices for optimizing your React applications, from state management techniques to minimizing re-renders and improving load times."
     },
     {
-        logo: Logo3,
-        title: 'Killer Content Strategy to Give The Brand A New Life Online',
-        description: 'Business Intelligence (BI) is a highly “technical” industry. It is tough to attract the right.'
+        logo: 'https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg',
+        title: 'Mastering Node.js Backend',
+        description: 'Explore the core concepts of building efficient, secure, and maintainable backends with Node.js, enhancing your server-side performance and API handling.'
     }
 ]
 
@@ -58,7 +58,7 @@ const Featured = () => {
           {cards.map((x)=>(
             <Grid item xs={2} sm={4} md={4}>
             <Item sx={{backgroundColor: 'transparent' , boxShadow: 'none', boxSizing: 'border-box', img: {width: '70%'}}}>
-                <img src={x.logo} alt="" />
+                <img style={{width: '80%', height: '220px', borderTopLeftRadius: '30px',borderBottomLeftRadius: '30px',borderBottomRightRadius: '30px',}} src={x.logo} alt="" />
                 <Box sx={{mt: 2, width: {md:'80%'}, mx: 'auto'}}>
                 <Typography sx={{fontSize: '20px', fontWeight: '700', mb: 2, color: 'black'}}>
                     {x.title}

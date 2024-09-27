@@ -5,6 +5,8 @@ import Hero1 from '../assets/hero1.svg'
 import Hero2 from '../assets/hero2.svg'
 import Hero3 from '../assets/hero3.svg'
 import Hero4 from '../assets/hero4.svg'
+import Awais1 from '../assets/Awais1.png'
+import Awais2 from '../assets/Awais2.png'
 import Pen from '../assets/Icons/pen.svg'
 import Left from "../assets/BgGradient/left.png";
 import Center from "../assets/BgGradient/center.png";
@@ -18,10 +20,17 @@ import {  Element, Link } from 'react-scroll';
 import { gsap } from "gsap";
 import { Power2 } from 'gsap'
 import { Power4 } from 'gsap'
+import { AiOutlineFacebook } from 'react-icons/ai'
+import { FiFacebook } from 'react-icons/fi'
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
+import { TbBrandFiverr } from 'react-icons/tb'
+import { FaSquareUpwork } from 'react-icons/fa6'
+import { MdOutlineEmail } from "react-icons/md";
+import Instagram from '../assets/instagram.png'
+import Facebook from '../assets/Facebook.png'
+import Mail from '../assets/Mail.png'
 
 const Hero = () => {
- 
-
   useEffect(() => {
     gsap.to('#hero', {
       duration: 2,
@@ -77,7 +86,7 @@ const Hero = () => {
 
   return (
    <Element name='Home'>
-     <Box className="background-container" sx={{backgroundColor: 'black', color: 'white', py: {md: 20, xs:15}}}>
+     <Box className="background-container" sx={{ color: 'white', py: {md: 20, xs:15}}}>
       <Container maxWidth="xl">
       <Grid id='hero' sx={{display: {sm: 'flex'}, mt: '-100px', opacity: '0'}}>
         <Box component='div' sx={{p: {xs: 0, sm: '70px 0', md: 7}, width: {md: "70%", sm: '70%'}}}>
@@ -85,7 +94,7 @@ const Hero = () => {
         THE ONE YOU CAN TRUST FOR IDEA GENERATION
         </Typography>
         <Typography id="two" variant='h6' sx={{maxWidth: '500px', fontSize: '15px', my: 2}}>
-        Whenever I write, I aim to create words that sell. There is no better way to market your brand!
+        I specialize in building full-stack applications using the MERN stack with a focus on responsive design and seamless user experiences.
         </Typography>
         <Box component="div" sx={{display: 'flex', gap: {xs:'20px', sm: '40px'}, mt: 5}}>
         <Link to='Newsletter' smooth={true} duration={1000}>
@@ -100,7 +109,7 @@ const Hero = () => {
             <img style={{marginLeft: '-10px'}} src={Hero4} alt="" />
             <Box component='span' sx={{ml: 1}}>
             <Typography sx={{fontSize: '20px', fontWeight: '700'}}>
-            750k+
+            100+
             </Typography>
             <Typography sx={{fontSize: '13px'}}>
             Happy customers
@@ -117,27 +126,30 @@ const Hero = () => {
             img: {width: {lg: '100%', xs: '80%'}, margin: {lg: '0', xs: '20px 30px 0 30px'}, 
             },
             }}>
-            <img src={heroimg} alt="" />
-            <Typography id="five" sx={{position: 'absolute', top: '268px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '20px 0 20px 8px', padding: {lg: '16px', xs: '8px'}, color: 'black', left: {lg: '-350px', xs: '-210px'}, boxShadow: '0px 0px 20px black', img:{width: {lg: '100%'}, mt: '0px', display: {lg: 'flex', xs: 'none'}}}}> <i><img src={Pen} alt="" /></i> I'm a copywriter brand strategist . </Typography>
-            <Typography id="six" sx={{position: 'absolute', top: '76px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '0px 20px 8px 20px', padding: {lg: '16px', xs: '8px'}, color: 'black', right: {lg: '-270px', xs: '-210px'}, boxShadow: '0px 0px 20px black'}}>👋 Hey, I'm Noman </Typography>
+            <img style={{borderRadius: '20px', width: '110%', height: '500px', objectFit: 'cover', border: '5px solid #16A26F'}} src={Awais1} alt="" />
+            <Typography id="five" sx={{position: 'absolute', top: '268px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '20px 0 20px 8px', padding: {lg: '16px', xs: '8px'}, color: 'black', left: {lg: '-350px', xs: '-210px'}, boxShadow: '0px 0px 20px black', img:{width: {lg: '100%'}, mt: '0px', display: {lg: 'flex', xs: 'none'}}}}> <i><img src={Pen} alt="" /></i> I'm a Founder & CEO at <a style={{textDecoration: 'none', color: 'black', fontWeight: '700'}} href='http://www.logicruise.com/'>Logicriuse</a> </Typography>
+            <Typography id="six" sx={{position: 'absolute', top: '76px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '0px 20px 8px 20px', padding: {lg: '16px', xs: '8px'}, color: 'black', right: {lg: '-270px', xs: '-210px'}, boxShadow: '0px 0px 20px black'}}>👋 Hey, I'm Awais.</Typography>
         </Box>
       </Grid>
       <Container>
       <Box id="slider" sx={{display: 'flex', justifyContent: 'space-between', mt: 10, opacity: '0'}}>
       <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
-      <img src={Slide1} alt="" />
+      <img src="https://www.logicruise.com/assets/fiver-CGv11MdS.png"/>
       </Box>
       <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
-      <img src={Slide2} alt="" />
+      <img src="https://www.logicruise.com/assets/Linkdin-Bk4nRDAr.png"/>
       </Box>
       <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
-      <img src={Slide3} alt="" />
+      <img src="https://www.logicruise.com/assets/Upwork-BWzB_EqU.png"/>
       </Box>
       <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
-      <img src={Slide4} alt="" />
+      <img src={Instagram} alt="" />
       </Box>
       <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
-      <img src={Slide5} alt="" />
+      <img src={Facebook} alt="" />
+      </Box>
+      <Box sx={{ img: {width: {xs:'50px', md: '130px', sm: '80px'}}}}>
+      <img src={Mail} alt="" />
       </Box>
       </Box>
       </Container>

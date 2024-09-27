@@ -40,7 +40,7 @@ const KnowMe = () => {
             ease: Power3.easeInOut,
             opacity: 1,
           });
-        gsap.to('#img', {
+        gsap.to('#img1', {
           duration:1,
           y: 30,
           width: '100%',
@@ -55,13 +55,13 @@ const KnowMe = () => {
         <Grid sx={{display: {md:'flex'}, justifyContent: {md: 'space-evenly', xs: 'center', sm: 'center'}}}>
             <Box id="text" sx={{width: {md: '40%', xs: '100%'}, p: {lg: 5}, mt: '-200px'}}>
                 <Typography id="textone" variant='h3' sx={{fontWeight: '700'}}>Getting to know me</Typography>
-                <Typography id="texttwo" sx={{my: 3}}>From updating work samples to optimizing for mobile devices, Noman will provide you with the knowledge and skills you need to stand out in today's competitive job market.</Typography>
+                <Typography id="texttwo" sx={{my: 3}}>I’m a MERN stack developer specializing in building scalable, high-performance web applications with MongoDB, Express, React, and Node.js. My focus is on delivering responsive designs and seamless user experiences.</Typography>
                 <Box id="btn" component="button" sx={{py: 1.7, px: 4, borderRadius: '10px', bgcolor: 'black', color: 'white', fontWeight: '600', cursor: 'pointer', transition: 'ease-in-out 0.3s',  '&:hover':{bgcolor: 'transparent', color: 'black'}}}>
                     Learn more
                 </Box>
             </Box>
             <Box sx={{display: 'flex', justifyContent: 'center', img: {width: '10%'}, mt: {md: '0', xs: '200px'}}}>
-                <img id='img' src={Headimg} alt="" />
+                <img id='img1' src={Headimg} alt="" />
             </Box>
         </Grid>
         </Container>

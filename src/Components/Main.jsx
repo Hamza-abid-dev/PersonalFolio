@@ -6,6 +6,7 @@ import { styled } from '@mui/material/styles';
 import Logo1 from '../assets/Main/cardLogo1.png'
 import Logo2 from '../assets/Main/cardLogo2.png'
 import Logo3 from '../assets/Main/cardLogo3.png'
+import Awais1 from '../assets/Awais1.png'
 import { useInView } from 'react-intersection-observer';
 import { Power3, gsap } from 'gsap';
 
@@ -14,18 +15,18 @@ import { Power3, gsap } from 'gsap';
 const cards = [
     {
         logo: Logo1,
-        title: 'Copywriting Strategy Ever',
-        description: 'An expert on our team will work with you to understand your goals, technical needs, and team.'
+        title: 'Full-Stack Solutions',
+        description: 'Leverage the power of MongoDB, Express, React, and Node.js to build robust, end-to-end web applications tailored to meet your business needs.'
     },
     {
         logo: Logo2,
-        title: 'Free LinkedIn Masterclass',
-        description: "Within days, we'll introduce you to the right talent for your project. Average time to match is under 24."
+        title: 'Modern Web Development',
+        description: "Stay ahead of the curve with cutting-edge web technologies, delivering responsive, high-performance applications that provide seamless user experiences."
     },
     {
         logo: Logo3,
-        title: 'Best LinkedIn Posts',
-        description: 'Work with your new team member on a trial basis (pay only if satisfied), ensuring you hire .'
+        title: 'Efficient Scalable Applications',
+        description: 'Design and develop applications that are both efficient and scalable, ensuring they perform smoothly as your business grows and evolves.'
     }
 ]
 
@@ -59,8 +60,11 @@ const Main = () => {
               duration:3,
               y: 30,
               ease: Power3.easeInOut,
-              width: '100%',
+              width: '80%',
               opacity: 1,
+              height: '90%',
+              borderRadius: '20px',
+              border: '5px solid black',
             });
           }
           if(inView){
@@ -91,11 +95,11 @@ const Main = () => {
         <Container id="main" sx={{opacity: '0', mt: '100px'}} maxWidth="xl">
         <Grid sx={{display: {md:'flex'}, justifyContent: {md: 'space-evenly', xs: 'center', sm: 'center'}}}>
             <Box sx={{display: 'flex', justifyContent: 'center', img: {width: '80%' } }}>
-                <img id='img' src={headImg} alt="" />
+                <img id='img' src={Awais1} alt="" />
             </Box>
             <Box sx={{width: {md: '40%', xs: '100%'}, p: {lg: 5}, mt: {lg: 0, xs: 5}}}>
                 <Typography id="textone" variant='h3' sx={{fontWeight: '700'}}>Increase Your Skills & Your Opportunities</Typography>
-                <Typography id="texttwo" sx={{my: 3}}>With over a decade of experience in digital marketing and career development, Abdullah Noman is a seasoned professional dedicated to helping individuals achieve their career goals.</Typography>
+                <Typography id="texttwo" sx={{my: 3}}>With over a decade of experience in full-stack web development, I am a seasoned MERN stack professional dedicated to building scalable, high-performance applications and helping teams achieve their development goals.</Typography>
                 <Box id="btn" component="button" sx={{py: 1.7, px: 4, borderRadius: '10px', bgcolor: 'black', color: 'white', fontWeight: '600', cursor: 'pointer', transition: 'ease-in-out 0.3s',  '&:hover':{bgcolor: 'transparent', color: 'black'}}}>
                     Learn more
                 </Box>

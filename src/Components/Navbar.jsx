@@ -47,25 +47,10 @@ const Navbar = () => {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }}>
-              <img src={logoimg} alt="" />
+              <h1>
+                Syed Awais
+              </h1>
             </Box>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                ml: 2,
-                display: { xs: 'none', md: 'flex' },
-                fontFamily: 'monospace',
-                fontWeight: 700,
-                letterSpacing: '.3rem',
-                color: 'inherit',
-                textDecoration: 'none',
-              }}
-            >
-              OptiFolio
-            </Typography>
 
             {/* Mobile Menu Icon */}
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

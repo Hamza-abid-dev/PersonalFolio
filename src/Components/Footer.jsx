@@ -68,12 +68,13 @@ const Footer = () => {
         <Box sx={{display: 'flex', alignItems: 'center', gap: 2 }}>
             <img src="http://localhost:5173/src/assets/Vector.png" alt="" />
             <Typography sx={{fontSize: {lg:'25px', xs: '20px'}, fontWeight: 'bold'}}>
-            OptiFolio
+            Syed Awais
+            <br/>
             </Typography>
         </Box>
         <Box>
         <Typography sx={{color: '#C7D5D3', fontSize: '15px', ml: 4}}>
-        © 2024 Design Monks. All rights reserved.
+        <a style={{color: '#C7D5D3', textDecoration: 'none'}} href="https://www.logicruise.com/">www.logicruise.com</a>
         </Typography>
         </Box>
        </Box>

@@ -32,6 +32,7 @@ body{
     background-position: center, bottom left, top right; /* Adjust as needed */
     background-size: cover, contain, auto; /* Adjust as needed */
     background-repeat: no-repeat, no-repeat, no-repeat; /* Adjust as needed */
+    background-color: black;
   }
 
 
@@ -83,4 +84,16 @@ body{
 }
 .navbar:hover{
   opacity: 1;
+}
+
+
+
+#slider div svg:hover{
+  scale: 1.2;
+  transition: all 0.3s;
+}
+
+#slider div svg{
+  padding: 0.2rem 0;
+  border-radius: 0.5rem;
 }
