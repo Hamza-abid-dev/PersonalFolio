@@ -126,7 +126,7 @@ const Hero = () => {
             img: {width: {lg: '100%', xs: '80%'}, margin: {lg: '0', xs: '20px 30px 0 30px'}, 
             },
             }}>
-            <img style={{borderRadius: '20px', width: '110%', height: '500px', objectFit: 'cover', border: '5px solid #16A26F'}} src={Awais1} alt="" />
+            <img style={{borderRadius: '20px', objectFit: 'cover', border: '5px solid #16A26F'}} src={Awais1} alt="" />
             <Typography id="five" sx={{position: 'absolute', top: '268px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '20px 0 20px 8px', padding: {lg: '16px', xs: '8px'}, color: 'black', left: {lg: '-350px', xs: '-210px'}, boxShadow: '0px 0px 20px black', img:{width: {lg: '100%'}, mt: '0px', display: {lg: 'flex', xs: 'none'}}}}> <i><img src={Pen} alt="" /></i> I'm a Founder & CEO at <a style={{textDecoration: 'none', color: 'black', fontWeight: '700'}} href='http://www.logicruise.com/'>Logicriuse</a> </Typography>
             <Typography id="six" sx={{position: 'absolute', top: '76px', display: 'flex', gap: '10px', bgcolor: '#EAFBF1', borderRadius: '0px 20px 8px 20px', padding: {lg: '16px', xs: '8px'}, color: 'black', right: {lg: '-270px', xs: '-210px'}, boxShadow: '0px 0px 20px black'}}>👋 Hey, I'm Awais.</Typography>
         </Box>

@@ -66,7 +66,6 @@ const Footer = () => {
        <hr style={{marginTop: '50px'}} />
        <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', py:3}}>
         <Box sx={{display: 'flex', alignItems: 'center', gap: 2 }}>
-            <img src="http://localhost:5173/src/assets/Vector.png" alt="" />
             <Typography sx={{fontSize: {lg:'25px', xs: '20px'}, fontWeight: 'bold'}}>
             Syed Awais
             <br/>

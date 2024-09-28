@@ -89,10 +89,6 @@ const Navbar = () => {
                 ))}
               </Menu>
             </Box>
-
-            <Box sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }}>
-              <img src={logoimg} alt="" />
-            </Box>
             <Typography
               variant="h5"
               noWrap
@@ -109,7 +105,7 @@ const Navbar = () => {
                 textDecoration: 'none',
               }}
             >
-              OptiFolio
+              Syed Awais
             </Typography>
 
             {/* Desktop Menu Items Centered */}
