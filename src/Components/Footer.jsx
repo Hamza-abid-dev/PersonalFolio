@@ -4,6 +4,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import XIcon from '@mui/icons-material/X';
+import { FiveMpRounded } from '@mui/icons-material';
+import { SiFiverr } from 'react-icons/si';
+import { FaFacebook, FaLinkedin, FaUpwork } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -55,10 +58,11 @@ const Footer = () => {
             <li></li>
             <li>
             <Box sx={{display: 'flex', gap:0.3}}>
-            <InstagramIcon sx={{p:0.5, border: '1px solid white', borderRadius: '50%'}}/>
-            <YouTubeIcon sx={{p:0.5, border: '1px solid white', borderRadius: '50%'}}/>
-            <LinkedInIcon sx={{p:0.5, border: '1px solid white', borderRadius: '50%'}}/>
-            <XIcon sx={{p:0.5, border: '1px solid white', borderRadius: '50%'}}/>
+            <a style={{color: 'white'}} href="https://www.fiverr.com/syedawais09?up_rollout=true"><SiFiverr size={30} style={{borderRadius: '50%', padding: '0.5rem', border: '1px solid white'}}/></a>
+            <a style={{color: 'white'}} href="https://www.upwork.com/freelancers/~01e15d026b76990c75/"><FaUpwork size={30} style={{borderRadius: '50%', padding: '0.5rem', border: '1px solid white'}}/></a>
+            <a style={{color: 'white'}} href="http://linkedin.com/in/syed-awais-hassan-522139233"><LinkedInIcon sx={{p:1, border: '1px solid white', borderRadius: '50%', fontSize: '2rem'}}/></a>
+            <a style={{color: 'white'}} href="https://www.facebook.com/syed.awaishassan.7?mibextid=LQQJ4d"><FaFacebook size={30} style={{borderRadius: '50%', padding: '0.5rem', border: '1px solid white'}}/></a>
+            <a style={{color: 'white'}} href="https://www.instagram.com/awais_hassan24?igsh=MXA5emFieXltZDg3cQ%3D%3D&utm_source=qr"><InstagramIcon sx={{p:1, border: '1px solid white', borderRadius: '50%', fontSize: '2rem'}}/></a>
             </Box>
             </li>
         </Box>

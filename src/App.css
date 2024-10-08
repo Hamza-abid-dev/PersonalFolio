@@ -97,3 +97,19 @@ body{
   padding: 0.2rem 0;
   border-radius: 0.5rem;
 }
+
+.aboutMeImg{
+  width: 700px;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 1rem;
+  aspect-ratio: 3/4;
+}
+
+.aboutMeImgDiv{
+  width: 380px;
+  height: 420px;
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+}

@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography } from '@mui/material'
 import React from 'react'
-import Headimg from "../assets/KnowMe/head.png";
+import Headimg from "../assets/AboutMeImg1.png";
 import { Power3, gsap } from 'gsap';
 import { useInView } from 'react-intersection-observer';
 
@@ -40,13 +40,6 @@ const KnowMe = () => {
             ease: Power3.easeInOut,
             opacity: 1,
           });
-        gsap.to('#img1', {
-          duration:1,
-          y: 30,
-          width: '100%',
-          ease: Power3.easeInOut,
-          opacity: 1,
-        });
       }
   return (
     <div>
@@ -60,8 +53,8 @@ const KnowMe = () => {
                     Learn more
                 </Box>
             </Box>
-            <Box sx={{display: 'flex', justifyContent: 'center', img: {width: '10%'}, mt: {md: '0', xs: '200px'}}}>
-                <img id='img1' src={Headimg} alt="" />
+            <Box component='div' className='aboutMeImgDiv' sx={{display: 'flex', justifyContent: 'center', mt: {md: '0', xs: '200px'}}}>
+                <img className='aboutMeImg' src={Headimg} alt="" />
             </Box>
         </Grid>
         </Container>
